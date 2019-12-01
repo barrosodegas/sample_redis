@@ -24,6 +24,11 @@ Executando:
 
 3 - Observar que neste caso, a porta de acesso a API é: 8180, e a porta de acesso ao Redis é: 6379
 
+Compilando o projeto
+
+- Para gerar o executável da API: Pelo CMD, dentro do diretório do projeto: mvn clean package -DskipTests -U -T 4
+- O executável .jar será criado em target/
+
 Acessando a API
 
 1 - URL base
