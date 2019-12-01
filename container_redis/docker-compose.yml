@@ -1,0 +1,16 @@
+version: "3"
+services:
+  CACHE-REDIS:
+    build:
+      dockerfile: ./CACHE-REDIS.dockerfile
+      context: .
+    image: redis
+    container_name: cache-redis
+    ports:
+      - "6379:6379"
+    networks:
+      - prod-api
+
+networks:
+  prod-api:
+    driver: bridge
