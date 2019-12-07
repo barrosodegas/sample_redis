@@ -1,9 +1,10 @@
 # CRUD API Kotlin e Redis
 
-- CRUD Api feita em Kotlin com a utilização do Redis para a exemplificação de cache distrbuído.
+- CRUD Api REST feita em Kotlin com a utilização do Redis para a exemplificação de cache distrbuído.
 - O Redis, que é uma solução open source para armazenamento de estrutura de dados em memória, o qual pode ser utilizada como banco de dados, cache ou message broker.
 - Uma vez que seu Redis estiver no ar, você pode replicar as configurações feitas nesta API par as demais APIs de seu projeto e poder  compartilhar qualquer informação entre eles.
 - Neste projeto, utilizo como exemplo dados de cliente que, geralmente, não costumam ser atualizados com muita frequência e que sempre são utilziados em várias partes de um sistema.
+- Também foi adicionada a possibilidade de consulta com GraphQL
 
 ## Preparando o ambiente e rodando a API
 
@@ -31,7 +32,7 @@ Compilando o projeto
 
 Acessando a API
 
-1 - URL base
+1 - URL REST base
   * http://localhost:8180/customers
 
 2 - Executar as chamadas do item abaixo no Postman ou qualquer ferramenta de sua preferência
@@ -42,3 +43,6 @@ Acessando a API
   * Remoção:     DELETE /<ID do cliente> Remove um cliente pelo ID
   * Adição:      POST / Cria um novo cliente
   * Atualização: PUT / Atualiza um cliente
+  
+4 - URL GraphQL Gui
+  * http://localhost:8180/gui
